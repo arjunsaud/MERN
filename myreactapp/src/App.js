@@ -1,6 +1,6 @@
 import './App.css';
-import Counter from './components/Counter';
-import UserRegistrationForm from './components/UserRegistrationForm';
+// import Counter from './components/Counter';
+// import UserRegistrationForm from './components/UserRegistrationForm';
 import Todo from './components/TodoComponent/Todo';
 
 function App() {
