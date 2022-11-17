@@ -10,7 +10,7 @@ function Todo() {
   const clearTodo=()=>{
     setTodoList([])
   }
-
+  
   const deleteTodo=(idx)=>{
     const newtodo=todoList.filter((todo,index)=>{
         if(index===idx) return false;
