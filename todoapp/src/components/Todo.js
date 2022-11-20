@@ -36,7 +36,6 @@ const Todo = () => {
             }
             return todo
         })
-
     }
 
     const changeTodo=(data,idx)=>{
@@ -61,7 +60,6 @@ const Todo = () => {
     const clearAll = () => {
         setTodoList([])
     }
-
     return (
         <>
             <Title />
