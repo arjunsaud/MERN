@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(5, 71, 57);
+}
+
+.title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.todoBody {
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.addtodo {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.addtodo input {
+    width: 40%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(9, 84, 146);
+    border-radius: 4px;
+}
+
+.addtodo button {
+    background-color: #071b53;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.todoListItems {
+    min-height: 2rem;
+    padding: 10px;
+    box-shadow: 3px 1px 2px 1px #272f86;
+    font-size: 1.8rem;
+    width: 45%;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 10px;
+    background: rgb(3, 25, 56);
+}
+
+.btn-delete {
+    float: right;
+    background-color: rgb(161, 4, 4);
+    font-size: 16px;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-edit {
+    float: right;
+    background-color: rgb(67, 68, 5);
+    font-size: 16px;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    width: fit-content;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.clear-section{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.clear-btn {
+    background-color: rgb(167, 8, 82);
+    font-size: 16px;
+    border: none;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+section{
+    display: grid;
+    gap: 4px;
+    grid-auto-flow: column;
+}
+
+/*popup */
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup .close {
+    position: absolute;
+    right: 30px;
+    transition: all 200ms;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  
+.content input{
+    width: 70%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(9, 84, 146);
+    border-radius: 4px;
+}
+.content button{
+    background-color: #071b53;
+    border: none;
+    margin-top: 10px;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
