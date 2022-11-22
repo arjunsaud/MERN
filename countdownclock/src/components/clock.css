@@ -1,0 +1,27 @@
+.title{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.form{
+    text-align: center;
+}
+.form input{
+    height: 30px;
+    border-color: blue;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.form button{
+    margin-left: 10px;
+    height: 2.2rem;
+    font-size: 20px;
+    background-color: rgb(10, 67, 141);
+    border-radius: 5px;
+}
+.clocktimer{
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}

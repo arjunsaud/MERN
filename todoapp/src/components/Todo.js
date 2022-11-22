@@ -1,17 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './todo.css'
 import Popup from './Popup';
+import useFetch from './useFetch';
 
 const Todo = () => {
-    const [todoList, setTodoList] = useState([])
-    const fetchData = async () => {
-        const data = await fetch("https://jsonplaceholder.typicode.com/posts")
-        const jsonData = await data.json()
-        setTodoList(jsonData)
-    }
-    useEffect(() => {
-        fetchData()
-    }, [])
+
+
+    const [todoList,setTodoList,popup,setPopup,index,setIndex]=useFetch()
 
     const addTodo = (todo) => {
         console.log(todo);
@@ -24,10 +19,6 @@ const Todo = () => {
         })
         setTodoList(newtodo)
     }
-
-    const [popup,setPopup]=useState("")
-    const [index,setIndex]=useState()
-
     const updateTodo = (idx) => {
         todoList.map((todo, index) => {
             if (index === idx){
