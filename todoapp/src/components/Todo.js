@@ -126,7 +126,7 @@ const TodoLists = ({ todoList, deleteTodo, updateTodo, strikeTodo }) => {
                         <div key={index} className="todoListItems">
                             <section style={{ opacity: value.isStriked ? "0.3" : "1" }}>
                                 <div style={{ cursor: "pointer", textDecoration: value.isStriked ? "red line-through" : "none" }} onClick={() => handleStrike(index)}>
-                                    {(value.title>30)?(value.title).slice(0, 35):value.title}</div>
+                                    {((value.title).length>30)?(value.title).slice(0, 35):value.title}</div>
                                 <div>
                                     <button className='btn-delete' onClick={() => handleDelete(index)}>Remove</button>
                                     <button className='btn-edit' onClick={() => handleEdit(index)}>Edit</button>
