@@ -1,0 +1,116 @@
+.addtodo{
+    margin-top: 20px;
+    text-align: center;
+}
+.addtodo input{
+    border-radius: 5px;
+    border-color: aqua;
+    font-size: 20px;
+    padding: 10px;
+}
+.addtodo button{
+    background-color: blueviolet;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.todolists{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+.todoitem{
+    width: 50%;
+    display: flex;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: blueviolet;
+}
+.todoitem span{
+    flex-grow: 3;
+}
+
+.edit{
+    float: right;
+    background-color: rgb(141, 88, 38);
+    font-size: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.delete{
+    float: right;
+    background-color: rgb(180, 8, 51);
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+
+/* popup */
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+.modal-content input{
+    border-radius: 5px;
+    border-color: aqua;
+    font-size: 20px;
+    padding: 10px;
+}
+.modal-content button{
+    background-color: blueviolet;
+    font-size: 16px;
+    padding: 10px;
+    align-self: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
